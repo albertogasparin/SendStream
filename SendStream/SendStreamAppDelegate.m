@@ -92,7 +92,7 @@ IOPMAssertionID _assertionID;
     }
     
     // Prevent sleep
-    IOReturn success = IOPMAssertionCreateWithName(kIOPMAssertionTypePreventSystemSleep,
+    IOReturn success = IOPMAssertionCreateWithName(kIOPMAssertionTypeNoIdleSleep,
                                                    kIOPMAssertionLevelOn, CFSTR("Streaming file"), &_assertionID);
     
     if (success != kIOReturnSuccess) {
@@ -112,7 +112,7 @@ IOPMAssertionID _assertionID;
     if ([[self settingsTargetIP] length] != 0) {
         [args addObject: [NSString stringWithFormat:@"-target=%@", [self settingsTargetIP]]];
     } else {
-        [_resultTextField setStringValue:@"Error: set Kodi IP address under preferences"];
+        [_resultTextField setStringValue:@"Error: missing Kodi IP address under preferences"];
         return;
     }
     
@@ -166,8 +166,8 @@ IOPMAssertionID _assertionID;
     // remove newlines
     output = [[output componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]] componentsJoinedByString:@" "];
     
-    if ([output rangeOfString:@"\"timeout\""].location != NSNotFound) {
-        output = @"Error: connection timeout";
+    if ([output rangeOfString:@"timeout"].location != NSNotFound) {
+        output = @"Error: Kodi not responding. Connection timeout";
     }
     
     [_resultTextField setStringValue:output];
