@@ -18,6 +18,7 @@
 		690EB1161AD99C70003A68DD /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690EB10F1AD99C70003A68DD /* MASPreferencesWindow.xib */; };
 		690EB1171AD99C70003A68DD /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690EB1111AD99C70003A68DD /* MASPreferencesWindowController.m */; };
 		690EB1201AD99D4D003A68DD /* SendStreamHelper in Resources */ = {isa = PBXBuildFile; fileRef = 690EB11F1AD99D4D003A68DD /* SendStreamHelper */; };
+		69708B6E1AE2ABB900933429 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69708B6D1AE2ABB900933429 /* Images.xcassets */; };
 		699A8C331ADCF99E0071AE0E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699A8C321ADCF99E0071AE0E /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		690EB1101AD99C70003A68DD /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferencesWindowController.h; sourceTree = "<group>"; };
 		690EB1111AD99C70003A68DD /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASPreferencesWindowController.m; sourceTree = "<group>"; };
 		690EB11F1AD99D4D003A68DD /* SendStreamHelper */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = SendStreamHelper; path = SendStreamHelper/bin/SendStreamHelper; sourceTree = SOURCE_ROOT; };
+		69708B6D1AE2ABB900933429 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		699A8C321ADCF99E0071AE0E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				2E8B1C621361CCEB002B7CD7 /* SendStreamAppDelegate.h */,
 				2E8B1C631361CCEB002B7CD7 /* SendStreamAppDelegate.m */,
 				2E8B1C651361CCEC002B7CD7 /* MainMenu.xib */,
+				69708B6D1AE2ABB900933429 /* Images.xcassets */,
 				2E8B1C571361CCEB002B7CD7 /* Supporting Files */,
 			);
 			path = SendStream;
@@ -171,7 +174,7 @@
 		2E8B1C431361CCEB002B7CD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0630;
 			};
 			buildConfigurationList = 2E8B1C461361CCEB002B7CD7 /* Build configuration list for PBXProject "SendStream" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -198,6 +201,7 @@
 				2E8B1C671361CCEC002B7CD7 /* MainMenu.xib in Resources */,
 				2E8B1C871361D2EC002B7CD7 /* AdvancedPreferencesView.xib in Resources */,
 				2E8B1C881361D2EC002B7CD7 /* GeneralPreferencesView.xib in Resources */,
+				69708B6E1AE2ABB900933429 /* Images.xcassets in Resources */,
 				690EB1201AD99D4D003A68DD /* SendStreamHelper in Resources */,
 				690EB1161AD99C70003A68DD /* MASPreferencesWindow.xib in Resources */,
 			);
@@ -244,6 +248,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -272,6 +277,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -288,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -305,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
