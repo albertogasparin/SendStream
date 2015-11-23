@@ -117,15 +117,15 @@ IOPMAssertionID _assertionID;
     }
     
     if ([[self settingsTargetPort] length] != 0) {
-        [args addObject: [NSString stringWithFormat:@"-targetport=%@", [self settingsTargetIP]]];
+        [args addObject: [NSString stringWithFormat:@"-targetport=%@", [self settingsTargetPort]]];
     }
     
-    if ([[self settingsTargetPort] length] != 0) {
-        [args addObject: [NSString stringWithFormat:@"-login=\"%@\"", [self settingsTargetIP]]];
+    if ([[self settingsUsername] length] != 0) {
+        [args addObject: [NSString stringWithFormat:@"-login=\"%@\"", [self settingsUsername]]];
     }
     
-    if ([[self settingsTargetPort] length] != 0) {
-        [args addObject: [NSString stringWithFormat:@"-password=\"%@\"", [self settingsTargetIP]]];
+    if ([[self settingsPassword] length] != 0) {
+        [args addObject: [NSString stringWithFormat:@"-password=\"%@\"", [self settingsPassword]]];
     }
     
     
